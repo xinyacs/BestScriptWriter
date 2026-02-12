@@ -4,10 +4,13 @@
 >
 > Powered by **GLM + KIMI2.5**.
 
+Language: [中文](./README.md) | **English**
+
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](./LICENSE)
 [![Docs License](https://img.shields.io/badge/Docs%20License-CC%20BY--SA%204.0-lightgrey.svg)](./compass/LICENSE)
-[![Release](https://img.shields.io/badge/release-dev-orange.svg)](#)
-[![Stars](https://img.shields.io/badge/stars-placeholder-lightgrey.svg)](#)
+[![Release](https://img.shields.io/github/v/release/xinyacs/BestScriptWriter)](https://github.com/xinyacs/BestScriptWriter/releases)
+[![Stars](https://img.shields.io/github/stars/xinyacs/BestScriptWriter?style=social)](https://github.com/xinyacs/BestScriptWriter)
+[![Issues](https://img.shields.io/github/issues/xinyacs/BestScriptWriter)](https://github.com/xinyacs/BestScriptWriter/issues)
 
 Quick Links:
 - [Features](#1-overview)
@@ -20,6 +23,16 @@ Quick Links:
 - [Licenses & Notices](#8-licenses--notices)
 
 ---
+
+## Screenshots
+
+![script](images/script.jpg)
+
+![l1](images/l1.jpg)
+
+![l2](images/l2.png)
+
+![settings](images/settings.png)
 
 ## 1. Overview
 
@@ -256,3 +269,12 @@ Trademark / endorsement:
 
 If you use this project in a paper/article/product:
 - please keep attribution and link back to this project, and declare your usage in NOTICE.
+
+---
+
+## Contact
+
+- **Email**: xinya01@xinyacs.top
+- **WeChat** (QR code):
+
+![wechat](images/me.jpg)

@@ -4,10 +4,13 @@
 >
 > 本项目由 **GLM + KIMI2.5** 助力完成。
 
+语言：**中文** ｜ [English](./README_EN.md)
+
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](./LICENSE)
 [![Docs License](https://img.shields.io/badge/Docs%20License-CC%20BY--SA%204.0-lightgrey.svg)](./compass/LICENSE)
-[![Release](https://img.shields.io/badge/release-dev-orange.svg)](#)
-[![Stars](https://img.shields.io/badge/stars-placeholder-lightgrey.svg)](#)
+[![Release](https://img.shields.io/github/v/release/xinyacs/BestScriptWriter)](https://github.com/xinyacs/BestScriptWriter/releases)
+[![Stars](https://img.shields.io/github/stars/xinyacs/BestScriptWriter?style=social)](https://github.com/xinyacs/BestScriptWriter)
+[![Issues](https://img.shields.io/github/issues/xinyacs/BestScriptWriter)](https://github.com/xinyacs/BestScriptWriter/issues)
 
 快速导航：
 - [功能特性](#1-项目简介)
@@ -20,6 +23,16 @@
 - [许可证与声明](#8-许可证与声明)
 
 ---
+
+## 项目截图
+
+![script](images/script.jpg)
+
+![l1](images/l1.jpg)
+
+![l2](images/l2.png)
+
+![settings](images/settings.png)
 
 ## 1. 项目简介
 
@@ -252,3 +265,12 @@ docker compose -f docker/docker-compose.yaml --env-file docker/.env up --build
 
 如果你在论文/文章/产品中使用或改造本项目：
 - 请保留本项目署名与链接，并在 NOTICE 中声明你使用了本项目。
+
+---
+
+## 联系方式
+
+- **Email**: xinya01@xinyacs.top
+- **微信**（二维码）:
+
+![wechat](images/me.jpg)

@@ -1,7 +1,10 @@
 from contextlib import asynccontextmanager
 
+from pathlib import Path
+
 from fastapi import FastAPI
 from fastapi import Request
+from fastapi.staticfiles import StaticFiles
 from starlette.middleware.cors import CORSMiddleware
 from starlette.templating import Jinja2Templates
 
@@ -18,6 +21,18 @@ PORT = int(getattr(settings, "PORT", None) or 8000)
 
 
 templates = Jinja2Templates(directory="templates")
+
+
+_ASSETS_DIR = Path("templates") / "assets"
+
+
+def _pick_asset_url(prefix: str, suffix: str) -> str | None:
+    if not _ASSETS_DIR.exists() or not _ASSETS_DIR.is_dir():
+        return None
+    matches = sorted(p.name for p in _ASSETS_DIR.iterdir() if p.is_file() and p.name.startswith(prefix) and p.name.endswith(suffix))
+    if not matches:
+        return None
+    return f"/assets/{matches[0]}"
 
 
 async def startup_event():
@@ -41,6 +56,7 @@ app = FastAPI(
     debug=settings.DEBUG,
     lifespan=lifespan,
 )
+app.mount("/assets", StaticFiles(directory=str(_ASSETS_DIR)), name="assets")
 ALLOWED_ORIGINS = [
     "http://localhost:5173",    # Vite 默认地址
     "http://10.0.0.44:5173",
@@ -58,7 +74,16 @@ app.add_middleware(
 
 @app.get("/")
 async def index(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    js_url = _pick_asset_url("index-", ".js")
+    css_url = _pick_asset_url("index-", ".css")
+    return templates.TemplateResponse(
+        "index.html",
+        {
+            "request": request,
+            "assets_js_url": js_url,
+            "assets_css_url": css_url,
+        },
+    )
 
 # Include routers
 app.include_router(combine_router)
