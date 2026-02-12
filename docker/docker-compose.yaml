@@ -1,0 +1,14 @@
+services:
+  bestscriptwriter:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: bestscriptwriter
+    env_file:
+      - .env
+    ports:
+      - "${PORT:-8000}:8000"
+    volumes:
+      - ../uploads:/app/uploads
+      - ../data:/app/data
+    restart: unless-stopped
