@@ -26,13 +26,13 @@
 
 ## 项目截图
 
-![script](images/script.jpg)
+<img src="images/script.jpg" width="820" style="max-width: 100%; height: auto;" />
 
-![l1](images/l1.jpg)
+<img src="images/l1.jpg" width="820" style="max-width: 100%; height: auto;" />
 
-![l2](images/l2.png)
+<img src="images/l2.png" width="820" style="max-width: 100%; height: auto;" />
 
-![settings](images/settings.png)
+<img src="images/settings.png" width="820" style="max-width: 100%; height: auto;" />
 
 ## 1. 项目简介
 
@@ -273,4 +273,4 @@ docker compose -f docker/docker-compose.yaml --env-file docker/.env up --build
 - **Email**: xinya01@xinyacs.top
 - **微信**（二维码）:
 
-![wechat](images/me.jpg)
+<img src="images/me.jpg" width="260" style="max-width: 100%; height: auto;" />

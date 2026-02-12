@@ -26,13 +26,13 @@ Quick Links:
 
 ## Screenshots
 
-![script](images/script.jpg)
+<img src="images/script.jpg" width="820" style="max-width: 100%; height: auto;" />
 
-![l1](images/l1.jpg)
+<img src="images/l1.jpg" width="820" style="max-width: 100%; height: auto;" />
 
-![l2](images/l2.png)
+<img src="images/l2.png" width="820" style="max-width: 100%; height: auto;" />
 
-![settings](images/settings.png)
+<img src="images/settings.png" width="820" style="max-width: 100%; height: auto;" />
 
 ## 1. Overview
 
@@ -277,4 +277,4 @@ If you use this project in a paper/article/product:
 - **Email**: xinya01@xinyacs.top
 - **WeChat** (QR code):
 
-![wechat](images/me.jpg)
+<img src="images/me.jpg" width="260" style="max-width: 100%; height: auto;" />
